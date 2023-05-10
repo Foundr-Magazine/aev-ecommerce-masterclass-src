@@ -1,0 +1,206 @@
+ #meet-instructor{
+    position: relative;
+    padding: 100px 0 80px;
+    z-index: 2;
+
+    @media (max-width: 1199px){
+        padding: 80px 0 10px;
+    }
+
+    .container {
+        position: relative;
+        max-width: 1225px;
+
+        &.wrap{
+            &::before{
+                content: "";
+                position: absolute;
+                border: 2px #d9d9d9 solid;
+                height: 78%;
+                width: 1500px;
+                top: 70px;
+                left: -957px;
+                @media (max-width: 1199px){
+                    display: none;
+                }
+            }
+        }
+
+        .row{
+            > div{
+                position: relative;
+            }
+        }
+
+        .dots {
+            position: absolute;
+            height: 405px;
+            width: 250px;
+            right: 6px;
+            background-repeat: no-repeat;
+            z-index: -2;
+            background-size: 100%;
+            bottom: -60px;
+
+            @media (max-width: 1199px){
+                display: none;
+            }
+            .has-webp-support & {
+                background-image: url('../images/dots-15x13.webp');
+            }
+            .no-webp-support & {
+                background-image: url('../images/dots-15x13.svg');
+            }
+        }
+    }
+
+    .img-wrapper {
+        padding: 0 80px;
+        @media (max-width: 1199px){
+            padding: 0 0 0 100px;
+        }
+        @media (max-width: 991px){
+            padding: 0;
+        }
+        img{
+            max-width: 385px;
+            width: 100%;
+            @media (max-width: 991px){
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+
+    h4{
+        font-size: 30px;
+        line-height: 30px;
+        margin: 30px 0;
+        br{
+            @media (max-width: 1199px){
+                display: none;
+            }
+        }
+        span{
+            color: $masterColor;
+        }
+    }
+
+    .forbes {
+        position: absolute;
+        max-width: 200px;
+        top: -50px;
+        left: -43px;
+
+        @media (max-width: 1200px){
+            left: 10px;
+        }
+        @media (max-width: 991px){
+            left: 13%;
+        }
+        @media (max-width: 667px){
+            left: 9px;
+            max-width: 140px;
+        }
+        @media (max-width: 336px){
+            max-width: 110px;
+        }
+    }
+
+    ul{
+        justify-content: center;
+
+        @media (max-width: 991px){
+            align-items: center;
+        }
+
+        li{
+            margin-bottom: 20px;
+
+            @media (max-width: 991px){
+                text-align: center;
+                margin: 0;
+            }
+
+            &:first-child {
+                margin-top: -45px;
+
+                @media (max-width: 991px){
+                    margin-top: 0;
+                }
+
+                img,
+                p{
+                    margin-left: -50px;
+                    @media (max-width: 1199px){
+                        margin-left: 0;
+                    }
+                }
+            }
+            &:nth-child(2){
+                margin-top: 30px;
+                @media (max-width: 1199px){
+                    margin-top: 0;
+                }
+            }
+
+            img{
+                box-shadow: -30px 55px 25px 6px rgba(229,229,229,0.8);
+
+                @media (max-width: 1199px){
+                    width: 100%;
+                }
+                @media (max-width: 767px){
+                    max-width: 400px;
+                }
+            }
+            p{
+                color: #616161;
+                text-transform: uppercase;
+                font-family: $sanSerifLight-57;
+                margin: 10px 0;
+                line-height: 21px;
+            }
+        }
+    }
+    @media (min-width: 991px){
+        .circle-left{
+            animation-name: rotate_left;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            width: 167px;
+            height: 174px;
+            top: 300px;
+            right: -100px;
+            z-index: -1;
+            position: absolute;
+            background-size: 100%;
+            background-position: 50%;
+            .has-webp-support & {
+                background-image: url('../images/half-circle.webp');
+            }
+            .no-webp-support & {
+                background-image: url('../images/half-circle.png');
+            }
+        }
+
+        .circle{
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-timing-function: normal;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            width: 75px;
+            height: 75px;
+            top: 550px;
+            right: 30px;    
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute;
+            box-shadow: -9px 20px 25px 6px rgba(229,229,229,0.8);
+            z-index: -1;
+        }
+    }
+}

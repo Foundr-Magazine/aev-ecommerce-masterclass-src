@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "CF Asty Std";
+    src: url("../fonts/CFAstyStd-Book.woff2") format("woff2"), url("../fonts/CFAstyStd-Book.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+font-display: swap;
+}
+
+// Helvetica Neue
+@font-face {
+    font-family: "Helvetica Neue LT Std";
+    src: url("../fonts/HelveticaNeueLTStd-BdCn.woff2") format("woff2"),
+        url("../fonts/HelveticaNeueLTStd-BdCn.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+font-display: swap;
+}
+
+@font-face {
+    font-family: "Miller Display";
+    src: url("../fonts/Miller-Display.woff2") format("woff2"), url("../fonts/Miller-Display.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Helvetica Neue LT Std 47";
+    src: url("../fonts/HelveticaNeueLTStd-LtCn.woff2") format("woff2"),
+        url("../fonts/HelveticaNeueLTStd-LtCn.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+font-display: swap;
+}
+
+@font-face {
+    font-family: "Helvetica Neue LT Std 57";
+    src: url("../fonts/HelveticaNeueLTStd-Cn.woff2") format("woff2"),
+        url("../fonts/HelveticaNeueLTStd-Cn.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto bold";
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+font-display: swap;
+}

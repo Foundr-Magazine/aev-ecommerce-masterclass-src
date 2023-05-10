@@ -1,0 +1,78 @@
+#ebook{
+    margin: 90px 0;
+    position: relative;
+    @media(max-width: 991px){
+        margin: 45px 0;
+    }
+    .section-header{
+        margin-top: 40px;
+        @media(max-width: 991px){
+            text-align: center;
+            margin-top: 0;
+        }
+        .subtitle{
+            font-size: 30px;
+            color: #9b9fa1;
+            text-transform: uppercase;
+            @media(max-width: 575px){
+                font-size: 24px;
+            }
+        }
+        .title{
+            font-size: 55px;
+            line-height: 56px;
+            color: $headingColor;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+            @media(max-width: 991px){
+                font-size: 45px;
+                line-height: 40px;
+            }
+            
+            span{
+                color: $masterColor;
+            }
+        }
+    }
+    img{
+        max-width: 425px;
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+    .content {
+        max-width: 545px;
+        width: 100%;
+        @media(max-width: 991px){
+            max-width: 100%;
+        }
+    }
+    .meta-content{
+        margin-top: 25px;
+        &:before{
+            content: "";
+            position: absolute;
+            width: 1345px;
+            height: 1345px;
+            background: #f3f4f5;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            z-index: -2;
+        }
+    }
+    .hidden-m{
+        @media(max-width: 991px){
+            display: none;
+        }
+    }
+    .visible-m{
+        display: none;
+        @media(max-width: 991px){
+            display: block;
+            margin: 30px auto -10px;
+        }
+    }
+}

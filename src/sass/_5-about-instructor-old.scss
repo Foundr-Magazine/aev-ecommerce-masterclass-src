@@ -1,0 +1,168 @@
+#about-instructor{
+    padding: 180px 0 150px;
+    position: relative;
+
+    @media (max-width: 991px){
+        padding: 100px 0 0;
+    }
+
+    .container{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 22%;
+            background-color: $masterColor;
+            top: -80px;
+            bottom: -90px;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            @media(max-width: 991px){
+                top: -35px;
+                bottom: -90px;
+                width: 120%;
+                bottom: unset;
+                height: 395px;
+            }
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            background-color: $masterColor;
+            top: -80px;
+            bottom: -90px;
+            left: -95%;
+            z-index: -1;
+            @media(max-width: 991px){
+                top: -35px;
+                height: 395px;
+            }
+        }
+    }
+
+    .hidden-m{
+        @media (max-width: 991px){
+            display: none;
+        }
+    }
+
+    .visible-m.img-wrap{
+        display: none;
+
+        @media (max-width: 991px){
+            display: block;
+        }
+    }
+
+    .header {
+        position: relative;
+
+        @media (max-width: 991px){
+            text-align: center;
+        }
+
+        &:before{
+           content: "";
+            position: absolute;
+            border-right: 3px #fb1f40 solid;
+            height: 65px;
+            top: -85px;
+            left: 0;
+
+            @media (max-width: 991px){
+                left: 50%;
+                transform: translateX(-50%);
+                height: 50px;
+                top: -100px;
+            }
+        }
+
+        h1{
+            font-size: 80px;
+            line-height: 76px;
+            margin-bottom: 50px;
+
+            @media (max-width: 991px){
+                color: #fff;
+                font-size: 60px;
+                line-height: 59px;
+                margin-bottom: 0;
+            }
+        }
+
+        h4{
+            color: #fb1f40;
+            width: 100%;
+            font-size: 30px;
+            @media (max-width: 991px){
+                color: #2f2c2c;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .img-wrap {
+        margin-right: -10px;
+        margin-top: -40px;
+        margin-left: -120px;
+        @media (max-width: 991px){
+            position: relative;
+            margin: 0;
+            margin-bottom: 30px;
+            top: -15px;
+        }
+        img{
+            width: 100%;
+            @media (max-width: 991px){
+                width: 405px;
+                position: relative;
+                transform: translateX(-50%);
+                left: 45%;
+            }
+        }
+    }
+
+    @media (min-width: 991px){
+        .circle-left{
+            animation-name: rotate_left;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            width: 875px;
+            height: 875px;
+            top: 75px;
+            right: -500px;
+            z-index: -1;
+            position: absolute;
+
+            &:before{
+                content: "";
+                width: 100%;
+                height: 100%;
+                border: 130px solid #f7f7f7;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-radius: 50%;
+            }
+        }
+        .dots {
+            position: absolute;
+            height: 220px;
+            width: 220px;
+            bottom: -27%;
+            left: -6%;
+            background-repeat: no-repeat;
+            background-size: 130%;
+            z-index: 1;
+            .has-webp-support & {
+                background-image: url('../images/dots-15x13.webp');
+            }
+            .no-webp-support & {
+                background-image: url('../images/dots-15x13.svg');
+            }
+        }
+    }    
+}
