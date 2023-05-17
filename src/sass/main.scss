@@ -51,6 +51,20 @@ strong {
     font-family: $robotoBold;
 }
 
+.countdown-box{
+    .countdown-row{
+        padding-top: 0 !important;
+        .countdown-amount{
+            border: 1px solid #727272 !important;
+            height: 40px !important;
+            width: 60px !important;
+        }
+        .countdown-period{
+            border: 1px solid #727272 !important;
+        }
+    }
+}
+
 .btn-play{
     border-radius: 50%;
     background-color: $masterColor;

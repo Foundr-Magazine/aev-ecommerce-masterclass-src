@@ -1,5 +1,5 @@
 // Change This.
-const projectVersion = '1'
+const projectVersion = '4'
 const projectEntryFile = 'main.php'
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');

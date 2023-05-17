@@ -149,6 +149,12 @@
                     box-shadow: none;
                     border-color: #ced4da;
                 }
+                &#registernow{
+                    background-color: $masterColor;
+                    border-radius: 80px !important;
+                    margin-top: 20px;
+                    color: #fff;
+                }
             }
             .infusion-submit{
                 @media(max-width: 575px){
@@ -190,6 +196,69 @@
         border-radius: 8px;
         display: none;
     }
+    // * {
+    //     font-size: 1em;
+    //     padding: 0;
+    //     margin: 0;
+    //     -webkit-box-sizing: border-box;
+    //     -moz-box-sizing: border-box;
+    //     box-sizing: border-box;
+    //     }
+        
+    //     form {
+    //     width: 100%;
+    //     margin: 0 auto;
+    //     }
+        
+    //     .box {
+    //     padding: 0.5rem;
+    //     }
+    //     fieldset {
+    //         border: none;
+    //     }
+    //     label {
+    //     display: block;
+    //     }
+        
+    //     input {
+    //     display: block;
+    //     width: 100%;
+    //     padding: 1rem;
+    //     }
+        
+    //     #registernow{background:rgba(0,105,255,1);font-weight:bold;border-radius:10px;color:white;border:none;}
+        
+        
+        
+    //     @media all and (min-width: 35rem) and (max-width: 60rem) {
+        
+    //     .box {
+    //     float: left;
+    //     width: 100%;
+    //     }
+        
+    //     label {
+    //     display: block;
+    //     }
+        
+    //     #registernow{width:100%;font-size:1.2em}
+        
+    //     }
+        
+    //     @media all and (min-width:60rem) {
+        
+    //     .box {
+    //     width: 100%;
+    //     }
+        
+    //     input {
+    //     width: 100%;
+    //     }
+        
+    //     #registernow{width:75%;font-size:1.6em}
+        
+    // }
+        
 }
 
 .foundr-mac{
