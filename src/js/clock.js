@@ -80,11 +80,11 @@ if ( '' == deadline || null === deadline ) {
 
 jQuery(function($){
     // deadline = new Date(1626793200000);
-    // initializeClock('clockdiv', deadline);
-    // initializeClock('clockdiv1', deadline);
-    // initializeClock('clockdiv2', deadline);
-    // initializeClock('clockdiv3', deadline);
-    // initializeClock('clockdiv4', deadline);
+    initializeClock('clockdiv', deadline);
+    initializeClock('clockdiv1', deadline);
+    initializeClock('clockdiv2', deadline);
+    initializeClock('clockdiv3', deadline);
+    initializeClock('clockdiv4', deadline);
 
     // $(document).on( 'after_lazy_html_complete', function () {
     //     var head = document.body;
